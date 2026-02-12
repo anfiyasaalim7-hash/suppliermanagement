@@ -95,4 +95,31 @@ function payInvoice(){
 // ================= LOAD VENDORS =================
 function loadVendors(){
 
-    fetch(API + "/
+    fetch(API + "/vendors")
+    .then(res => res.json())
+    .then(data => {
+
+        const list = document.getElementById("vendorList");
+        list.innerHTML = "";
+
+        data.forEach(vendor => {
+
+            list.innerHTML += `
+                <li>
+                    <strong>${vendor.shop_name}</strong><br>
+                    Owner: ${vendor.owner}<br>
+                    Contact: ${vendor.contact}<br>
+                    Score: ${vendor.score}%
+                </li>
+            `;
+        });
+
+    })
+    .catch(err => {
+        console.error("Error loading vendors:", err);
+    });
+}
+
+
+// ================= AUTO LOAD ON START =================
+window.onload = loadVendors;
