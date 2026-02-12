@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "vendor_id": 1,
+    "item": "Rice Bags",
+    "quantity": 25,
+    "amount": 12500.50,
+    "date": "2026-02-09 11:00:00"
+  },
+  {
+    "id": 2,
+    "vendor_id": 2,
+    "item": "Cooking Oil",
+    "quantity": 10,
+    "amount": 7800,
+    "date": "2026-02-10 09:30:00"
+  }
+]
