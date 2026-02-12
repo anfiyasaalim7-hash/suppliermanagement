@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "vendor_id": 1,
+    "amount": 12500.50,
+    "status": "PAID",
+    "date": "2026-02-10 14:30:00",
+    "pdf": "invoice_1.pdf"
+  },
+  {
+    "id": 2,
+    "vendor_id": 2,
+    "amount": 7800,
+    "status": "PENDING",
+    "date": "2026-02-11 10:15:00",
+    "pdf": "invoice_2.pdf"
+  }
+]
